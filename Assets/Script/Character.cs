@@ -81,7 +81,7 @@ public class Character : MonoBehaviour
                 forceIndicator.SetActive(false);
                 if (jumpForce > 0)
                 {
-                    AudioManager.instance.Play("jump");
+                    //AudioManager.instance.Play("jump");
                     jumpForce += minForce;
                     rb.velocity = new Vector2(moveInput * jumpForce / 10f * speed, jumpForce);
                     jumpForce = 0;
