@@ -30,6 +30,8 @@ public class GameController : MonoBehaviour
     {
         if (hp == 0)
         {
+            AudioManager.instance.StopAudio();
+            AudioManager.instance.Play("lose");
             SceneManager.LoadScene("Game Over");
         }
         currentPosition = GameObject.FindAnyObjectByType<Character>().transform.position.y;

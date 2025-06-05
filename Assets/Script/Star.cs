@@ -7,6 +7,8 @@ public class Star : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            AudioManager.instance.StopAudio();
+            AudioManager.instance.Play("win");
             SceneManager.LoadScene("Win");
         }
     }

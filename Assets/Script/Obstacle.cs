@@ -16,6 +16,7 @@ public class Obstacle : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<Character>().ResetPosition();
+            GameObject.FindAnyObjectByType<CameraHandler>().SetPriority(1);
             gc.DecreaseHP(20);
         }
     }

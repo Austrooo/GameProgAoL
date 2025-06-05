@@ -182,15 +182,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reach The Sky
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab25ca7f2df70c448bc2bad8384e2cb4, type: 2}
+  m_sharedMaterial: {fileID: -7771507512045391277, guid: ab25ca7f2df70c448bc2bad8384e2cb4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280876800
-  m_fontColor: {r: 0, g: 1, b: 0.15850854, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 129.75
+  m_fontSize: 82.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 88.947876, y: 0, z: 4.9405518, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -732,8 +732,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab25ca7f2df70c448bc2bad8384e2cb4, type: 2}
+  m_sharedMaterial: {fileID: -7771507512045391277, guid: ab25ca7f2df70c448bc2bad8384e2cb4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.15
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -927,6 +927,14 @@ MonoBehaviour:
   - name: jump
     volume: 0.5
     clip: {fileID: 8300000, guid: b6b376679461d064e9af747bbca7f972, type: 3}
+    loop: 0
+  - name: win
+    volume: 0.5
+    clip: {fileID: 8300000, guid: b6ee18abeb4066e4db361abef0d6b288, type: 3}
+    loop: 0
+  - name: fail
+    volume: 0.5
+    clip: {fileID: 8300000, guid: 4f0ce1df578b9f842974f12976a95632, type: 3}
     loop: 0
 --- !u!1 &955532460
 GameObject:
@@ -3417,8 +3425,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab25ca7f2df70c448bc2bad8384e2cb4, type: 2}
+  m_sharedMaterial: {fileID: -7771507512045391277, guid: ab25ca7f2df70c448bc2bad8384e2cb4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3442,7 +3450,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.15
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
