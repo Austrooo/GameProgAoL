@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public static GameController instance;
+
     [SerializeField] private int hp;
     [SerializeField] private int coins;
 
@@ -20,10 +22,21 @@ public class GameController : MonoBehaviour
     {
         hp = 100;
         coins = 0;
+        DontDestroyOnLoad(gameObject);
 
         startPosition = GameObject.FindAnyObjectByType<Character>().transform.position.y;
         endPosition = GameObject.FindAnyObjectByType<Star>().transform.position.y;
         currentPosition = startPosition;
+
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     private void Update()
